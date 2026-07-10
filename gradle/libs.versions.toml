@@ -5,7 +5,7 @@ junit = "5.11.4"
 assertj = "3.26.3"
 wiremock = "3.10.0"
 springBoot = "3.3.5"
-springDepMgmt = "1.1.6"
+springDepMgmt = "1.1.7"
 
 [libraries]
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
