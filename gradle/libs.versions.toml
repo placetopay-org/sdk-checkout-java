@@ -1,9 +1,9 @@
 [versions]
 jackson = "2.18.2"
 slf4j = "2.0.16"
-junit = "5.11.4"
-assertj = "3.26.3"
-wiremock = "3.10.0"
+junit = "6.1.1"
+assertj = "3.27.7"
+wiremock = "3.13.2"
 springBoot = "3.3.5"
 springDepMgmt = "1.1.6"
 
