@@ -1,0 +1,22 @@
+# Code owners — PlaceToPay Java SDK
+#
+# Syntax: <pattern> <owner> [<owner> ...]
+# Docs:   https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Replace the @placetopay/* team handles below with the actual GitHub team
+# handles for your organization before committing.
+
+# ── Default owner for anything not matched below ──
+*                                   @placetopay/sdk-team
+
+# ── Security-sensitive: require an extra pair of eyes ──
+/sdk/src/main/java/com/placetopay/checkout/auth/        @placetopay/sdk-team @placetopay/security
+/sdk/src/main/java/com/placetopay/checkout/webhook/     @placetopay/sdk-team @placetopay/security
+/sdk/src/main/java/com/placetopay/checkout/http/        @placetopay/sdk-team @placetopay/security
+SECURITY.md                                             @placetopay/security
+
+# ── Release-critical: version bumps + CI pipeline ──
+/.github/workflows/                 @placetopay/sdk-team @placetopay/devops
+build.gradle.kts                    @placetopay/sdk-team
+settings.gradle.kts                 @placetopay/sdk-team
+CHANGELOG.md                        @placetopay/sdk-team

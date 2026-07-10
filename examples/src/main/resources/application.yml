@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.placetopay.checkout: DEBUG
+
+placetopay:
+  # Set via env vars: PLACETOPAY_LOGIN, PLACETOPAY_SECRET_KEY
+  login: ${PLACETOPAY_LOGIN:}
+  secret-key: ${PLACETOPAY_SECRET_KEY:}
+  environment: ${PLACETOPAY_ENVIRONMENT:SANDBOX}
+  country: ${PLACETOPAY_COUNTRY:COLOMBIA}
+  public-url: ${PUBLIC_URL:http://localhost:8080}
+
+spring:
+  application:
+    name: placetopay-checkout-example
+  thymeleaf:
+    cache: false
