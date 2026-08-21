@@ -9,7 +9,7 @@ plugins {
     // Spotless enforces google-java-format on every Java source file. Mirrors
     // ruff's role in the Python SDK: catches style drift in CI rather than in
     // code review. Run `./gradlew spotlessApply` to auto-fix locally.
-    id("com.diffplug.spotless") version "7.0.2"
+    id("com.diffplug.spotless") version "8.10.0"
 }
 
 allprojects {
