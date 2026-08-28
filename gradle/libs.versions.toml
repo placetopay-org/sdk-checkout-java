@@ -4,7 +4,7 @@ slf4j = "2.0.16"
 junit = "5.11.4"
 assertj = "3.26.3"
 wiremock = "3.10.0"
-springBoot = "3.3.5"
+springBoot = "4.1.1"
 springDepMgmt = "1.1.6"
 
 [libraries]
